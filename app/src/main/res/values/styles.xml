@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+    <style name="noticeDialogStyle" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- 设置ProgressDialog透明背景. --><!-- android:style/Theme.Dialog -->
+    <style name="CustomDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>  <!--Dialog的windowFrame框为无 -->
+        <item name="android:windowIsFloating">true</item> <!-- 是否浮现在activity之上 -->
+        <item name="android:windowContentOverlay">@null</item> <!-- 对话框是否有遮盖 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan
+        </item> <!-- 主窗口与软键盘的交互模式，可以用来避免输入法面板遮挡问题 -->
+        <item name="android:backgroundDimEnabled">true</item>  <!-- 是否允许背景灰暗 -->
+        <item name="android:windowNoTitle">true</item> <!-- 是否允许有标题栏 -->
+    </style>
+
+    <!-- 底部弹出框样式 -->
+    <style name="CustomButtonDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+    </style>
+
+    <!-- 底部弹出动画 -->
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/bottom_translate_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_translate_out</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/map_addlocation"
+        android:icon="@mipmap/icon_menu_addlocation"
+        android:showAsAction="ifRoom|collapseActionView"
+        android:title="@string/menu_map_addlocation" />
+
+    <item
+        android:id="@+id/map_common"
+        android:showAsAction="never"
+        android:title="@string/menu_map_com" />
+    <item
+        android:id="@+id/map_site"
+        android:showAsAction="never"
+        android:title="@string/menu_map_site" />
+    <item
+        android:id="@+id/map_traffic"
+        android:showAsAction="never"
+        android:title="@string/menu_map_traffic" />
+    <item
+        android:id="@+id/map_me"
+        android:showAsAction="never"
+        android:title="@string/menu_map_me" />
+
+    <item
+        android:id="@+id/map_com"
+        android:showAsAction="never"
+        android:title="@string/menu_map_com" />
+
+    <item
+        android:id="@+id/map_compass"
+        android:showAsAction="never"
+        android:title="@string/menu_map_compass" />
+
+    <item
+        android:id="@+id/map_following"
+        android:showAsAction="never"
+        android:title="@string/menu_map_following" />
+
+    <item
+        android:id="@+id/map_overlord"
+        android:showAsAction="never"
+        android:title="@string/menu_map_overlord" />
+
+</menu>
